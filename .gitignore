@@ -1,0 +1,16 @@
+# npm
+/node_modules
+
+# bower
+/bower_components
+
+# ruby bundler(gem)
+/vendor/bundler
+/.bundle
+/Gemfile.lock
+
+# sass
+/.sass-cache
+
+# chrome extension
+/*.pem

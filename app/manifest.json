@@ -1,0 +1,27 @@
+{
+	"name" : "ChatworkChromeExtension",
+	"version" : "0.0.0",
+	"manifest_version" : 2,
+	"description" : "ChatworkChromeExtension",
+	"background": {
+		"scripts": [
+			"js/lib/jquery.min.js"
+		]
+	},
+	"permissions" : [
+		"https://www.chatwork.com/*"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.chatwork.com/*"
+			],
+			"js": [
+				"js/lib/jquery.min.js",
+				"js/search.js"
+			],
+			"run_at": "document_start",
+			"all_frames": true
+		}
+	]
+}
